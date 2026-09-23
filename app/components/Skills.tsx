@@ -1,24 +1,23 @@
 export function Skills() {
   const skills = [
-    { name: "HTML", percent: 95, icon: "E" },
-    { name: "CSS", percent: 90, icon: "3" },
-    { name: "JavaScript", percent: 90, icon: "JS" },
-    { name: "React.js", percent: 85, icon: "⚛" },
-    { name: "Next.js", percent: 80, icon: "N" },
-    { name: "TypeScript", percent: 85, icon: "TS" },
-    { name: "Node.js", percent: 80, icon: "⬢" },
-    { name: "Tailwind CSS", percent: 90, icon: "〰" },
-    { name: "Git", percent: 85, icon: "♦" },
+    { name: "Node.js", percent: 95, icon: "⬢" },
+    { name: "React", percent: 90, icon: "⚛" },
+    { name: "TypeScript", percent: 95, icon: "TS" },
+    { name: "PostgreSQL", percent: 85, icon: "🐘" },
+    { name: "Bubble", percent: 80, icon: "B" },
+    { name: "RAG & AI", percent: 90, icon: "🧠" },
+    { name: "MCP", percent: 85, icon: "🔌" },
+    { name: "Agentic AI", percent: 90, icon: "🤖" },
   ];
 
   return (
     <section id="skills" className="container mx-auto px-6 lg:px-8">
       <div className="flex flex-col items-center text-center mb-12">
         <span className="text-sm font-bold uppercase tracking-wider text-[var(--accent-light)] mb-3">
-          My Skills
+          Minhas Habilidades
         </span>
         <h2 className="text-3xl md:text-4xl font-bold text-white">
-          Technologies I Master
+          Tecnologias que Domino
         </h2>
         <div className="h-1 w-20 bg-[var(--accent)] rounded-full mt-6" />
       </div>

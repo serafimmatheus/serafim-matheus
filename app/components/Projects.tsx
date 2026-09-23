@@ -27,10 +27,10 @@ export function Projects() {
     <section id="projects" className="container mx-auto px-6 lg:px-8">
       <div className="flex flex-col items-center text-center mb-12">
         <span className="text-sm font-bold uppercase tracking-wider text-[var(--accent-light)] mb-3">
-          Featured Projects
+          Projetos em Destaque
         </span>
         <h2 className="text-3xl md:text-4xl font-bold text-white">
-          Some of My Recent Work
+          Alguns dos meus trabalhos recentes
         </h2>
         <div className="h-1 w-20 bg-[var(--accent)] rounded-full mt-6" />
       </div>
@@ -64,7 +64,7 @@ export function Projects() {
                 href="#"
                 className="inline-flex items-center gap-2 text-sm font-semibold text-[var(--accent-light)] hover:text-white transition-colors"
               >
-                View Project <ArrowRight className="h-4 w-4" />
+                Ver Projeto <ArrowRight className="h-4 w-4" />
               </Link>
             </div>
           </div>

@@ -20,14 +20,14 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Alex | Web Developer",
-  description: "Portfolio of Alex, a passionate web developer building exceptional digital experiences.",
+  title: "Matheus Serafim | Full Stack & AI Engineer",
+  description: "Portfólio de Matheus Serafim, Engenheiro de Software especializado em Node.js, React, IA, RAG e Agentes Autônomos.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html
-      lang="en"
+      lang="pt-BR"
       className={`${geistSans.variable} ${geistMono.variable} ${outfit.variable} h-full antialiased`}
       suppressHydrationWarning
     >

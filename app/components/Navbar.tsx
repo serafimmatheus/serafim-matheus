@@ -3,12 +3,12 @@ import { ArrowUpRight, Code2 } from "lucide-react";
 
 export function Navbar() {
   const navLinks = [
-    { name: "Home", href: "#" },
-    { name: "About", href: "#about" },
-    { name: "Skills", href: "#skills" },
-    { name: "Projects", href: "#projects" },
+    { name: "Início", href: "#" },
+    { name: "Sobre", href: "#about" },
+    { name: "Habilidades", href: "#skills" },
+    { name: "Projetos", href: "#projects" },
     { name: "Blog", href: "#" },
-    { name: "Contact", href: "#contact" },
+    { name: "Contato", href: "#contact" },
   ];
 
   return (
@@ -31,10 +31,10 @@ export function Navbar() {
               className="text-sm font-medium text-gray-400 hover:text-white transition-colors relative group py-2"
             >
               {link.name}
-              {link.name === "Home" && (
+              {link.name === "Início" && (
                 <span className="absolute bottom-0 left-0 h-0.5 w-full bg-[var(--accent)] rounded-full" />
               )}
-              {link.name !== "Home" && (
+              {link.name !== "Início" && (
                 <span className="absolute bottom-0 left-0 h-0.5 w-0 bg-[var(--accent)] transition-all group-hover:w-full rounded-full" />
               )}
             </Link>
@@ -47,7 +47,7 @@ export function Navbar() {
             href="#contact"
             className="group flex items-center justify-center gap-2 rounded-lg bg-[var(--accent)] px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[var(--accent-light)] hover:shadow-[0_0_20px_rgba(109,40,217,0.4)]"
           >
-            Hire Me
+            Vamos Conversar
             <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
           </Link>
         </div>

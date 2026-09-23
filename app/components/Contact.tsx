@@ -14,21 +14,21 @@ export function Contact() {
         {/* Left Column - Call to action */}
         <div className="flex flex-col gap-4">
           <span className="text-sm font-bold uppercase tracking-wider text-[var(--accent-light)]">
-            Let's Work Together
+            Vamos Trabalhar Juntos
           </span>
           <h2 className="text-3xl font-bold text-white leading-tight">
-            Have a project in mind?
+            Tem um projeto em mente?
           </h2>
           <p className="text-gray-400 text-sm">
-            I'm always open to discussing new projects and opportunities. Let's
-            create something amazing together!
+            Estou sempre aberto a discutir novos projetos, ideias e oportunidades. 
+            Vamos criar algo incrível juntos!
           </p>
           <div className="mt-4">
             <Link
-              href="mailto:hello@alexdev.com"
+              href="mailto:hello@matheusserafim.com"
               className="inline-flex items-center justify-center gap-2 rounded-lg bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-[var(--accent-light)] hover:shadow-[0_0_20px_rgba(109,40,217,0.4)] group"
             >
-              Get In Touch
+              Entrar em Contato
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
@@ -39,9 +39,9 @@ export function Contact() {
           <Quote className="absolute top-6 left-6 h-8 w-8 text-[var(--accent)]/30" />
           <div className="pt-8">
             <p className="text-gray-300 text-sm leading-relaxed italic">
-              "Alex is an exceptional developer who delivers high-quality work
-              on time. His attention to detail and problem-solving skills are
-              outstanding."
+              "Matheus é um desenvolvedor excepcional que entrega com alta 
+              qualidade e pontualidade. Sua atenção aos detalhes e habilidade 
+              para resolver problemas são impressionantes."
             </p>
           </div>
           <div className="flex items-center gap-4 mt-6">
@@ -59,7 +59,7 @@ export function Contact() {
         {/* Right Column - Contact Info & Socials */}
         <div className="flex flex-col gap-6">
           <span className="text-sm font-bold uppercase tracking-wider text-gray-500">
-            Follow Me
+            Siga-me
           </span>
           <div className="flex gap-4">
             <Link href="#" className="w-10 h-10 rounded-full bg-[var(--card-bg)] border border-[var(--card-border)] flex items-center justify-center text-gray-400 hover:text-white hover:border-[var(--accent)] transition-all">
@@ -77,9 +77,9 @@ export function Contact() {
           </div>
           
           <div className="flex flex-col gap-4 mt-4">
-            <a href="mailto:hello@alexdev.com" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group">
+            <a href="mailto:hello@matheusserafim.com" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group">
               <Mail className="h-5 w-5 text-[var(--accent)] group-hover:scale-110 transition-transform" />
-              <span className="text-sm">hello@alexdev.com</span>
+              <span className="text-sm">hello@matheusserafim.com</span>
             </a>
             <a href="tel:+15551234567" className="flex items-center gap-3 text-gray-400 hover:text-white transition-colors group">
               <Phone className="h-5 w-5 text-[var(--accent)] group-hover:scale-110 transition-transform" />

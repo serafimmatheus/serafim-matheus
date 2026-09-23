@@ -9,18 +9,18 @@ export function Hero() {
         <div className="flex flex-col gap-6">
           <div className="inline-block px-4 py-1.5 rounded-full bg-[var(--card-bg)] border border-[var(--card-border)] w-max">
             <span className="text-xs font-bold uppercase tracking-wider text-[var(--accent-light)]">
-              I'm a Web Developer
+              Full Stack Software Engineer & AI
             </span>
           </div>
 
           <h1 className="text-5xl lg:text-7xl font-bold leading-tight text-white">
-            Hi, I'm <span className="text-[var(--accent-light)]">Alex</span>
-            <br />I build things for the web.
+            Olá, sou <span className="text-[var(--accent-light)]">Matheus</span>
+            <br />Engenheiro de Software.
           </h1>
 
           <p className="text-lg text-gray-400 max-w-xl">
-            I'm a passionate web developer specializing in building
-            exceptional digital experiences with modern technologies.
+            Desenvolvo aplicações escaláveis e arquiteturas baseadas em 
+            Inteligência Artificial Generativa para automação de processos complexos.
           </p>
 
           <div className="flex flex-wrap items-center gap-4 mt-2">
@@ -28,21 +28,21 @@ export function Hero() {
               href="#projects"
               className="group flex items-center justify-center gap-2 rounded-lg bg-[var(--accent)] px-6 py-3 font-semibold text-white transition-all hover:bg-[var(--accent-light)] hover:shadow-[0_0_20px_rgba(109,40,217,0.4)]"
             >
-              View My Work
+              Ver Meu Trabalho
               <ArrowUpRight className="h-5 w-5 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
             <Link
               href="#"
               className="group flex items-center justify-center gap-2 rounded-lg border border-[var(--card-border)] bg-transparent px-6 py-3 font-semibold text-white transition-all hover:bg-[var(--card-bg)]"
             >
-              Download CV
+              Baixar CV
               <Download className="h-5 w-5 transition-transform group-hover:-translate-y-0.5" />
             </Link>
           </div>
 
           <div className="mt-8">
             <p className="text-xs font-bold uppercase tracking-wider text-gray-500 mb-4">
-              Technologies I Work With
+              Tecnologias que utilizo
             </p>
             <div className="flex flex-wrap gap-4">
               {/* Tech Icons Placeholders - Using small rounded squares for now */}
@@ -78,13 +78,13 @@ export function Hero() {
               <code>
                 <span className="text-pink-400">const</span> developer = {"{"}
                 <br />
-                {"  "}name: <span className="text-green-400">"Alex"</span>,
+                {"  "}name: <span className="text-green-400">"Matheus Serafim"</span>,
                 <br />
                 {"  "}skills: [
-                <span className="text-green-400">"React"</span>, <span className="text-green-400">"Next.js"</span>
+                <span className="text-green-400">"Node.js"</span>, <span className="text-green-400">"React"</span>, <span className="text-green-400">"AI"</span>
                 ],
                 <br />
-                {"  "}passion: <span className="text-green-400">"Building"</span>
+                {"  "}passion: <span className="text-green-400">"Engineering"</span>
                 <br />
                 {"}"};
               </code>

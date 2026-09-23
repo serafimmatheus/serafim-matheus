@@ -5,23 +5,23 @@ export function About() {
   const stats = [
     {
       icon: <Calendar className="h-6 w-6 text-[var(--accent-light)]" />,
-      value: "4+",
-      label: "Years Experience",
+      value: "5+",
+      label: "Anos de Experiência",
     },
     {
       icon: <Code2 className="h-6 w-6 text-[var(--accent-light)]" />,
       value: "50+",
-      label: "Projects Completed",
+      label: "Projetos Concluídos",
     },
     {
       icon: <Smile className="h-6 w-6 text-[var(--accent-light)]" />,
       value: "30+",
-      label: "Happy Clients",
+      label: "Clientes Satisfeitos",
     },
     {
       icon: <Trophy className="h-6 w-6 text-[var(--accent-light)]" />,
       value: "100%",
-      label: "Client Satisfaction",
+      label: "Satisfação",
     },
   ];
 
@@ -31,23 +31,24 @@ export function About() {
         {/* Left Content */}
         <div className="flex flex-col gap-6">
           <span className="text-sm font-bold uppercase tracking-wider text-[var(--accent-light)]">
-            About Me
+            Sobre Mim
           </span>
           <h2 className="text-3xl md:text-4xl font-bold leading-tight text-white">
-            I'm passionate about <br />
-            creating digital solutions
+            Especialista em IA <br />
+            e Engenharia de Software
           </h2>
           <p className="text-gray-400 leading-relaxed max-w-lg">
-            With 4+ years of experience in web development, I help businesses
-            and individuals bring their ideas to life through clean, efficient,
-            and user-friendly code.
+            Engenheiro de Software com 5 anos de experiência desenvolvendo aplicações escaláveis com TypeScript, Node.js, React e PostgreSQL. Especializado na arquitetura e integração de sistemas baseados em Inteligência Artificial Generativa, implementando pipelines de RAG com busca vetorial (pgvector), conectores padronizados via Model Context Protocol (MCP) e orquestração de agentes autônomos.
+          </p>
+          <p className="text-gray-400 leading-relaxed max-w-lg">
+            Foco em confiabilidade de sistemas, observabilidade, redução de custos de inferência e design de arquiteturas de software resilientes.
           </p>
           <div>
             <Link
               href="#about-more"
               className="inline-flex items-center justify-center gap-2 rounded-lg border border-[var(--card-border)] px-6 py-3 font-semibold text-white transition-all hover:bg-[var(--card-bg)]"
             >
-              Learn More About Me
+              Saiba Mais Sobre Mim
             </Link>
           </div>
         </div>
