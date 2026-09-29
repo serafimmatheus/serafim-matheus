@@ -5,6 +5,7 @@ import { Projects } from "./components/Projects";
 import { Process } from "./components/Process";
 import { Features } from "./components/Features";
 import { Contact } from "./components/Contact";
+import { FloatingWhatsApp } from "./components/FloatingWhatsApp";
 
 
 export default function Home() {
@@ -16,6 +17,7 @@ export default function Home() {
       <Process />
       <Projects />
       <Contact />
+      <FloatingWhatsApp />
     </main>
   );
 }
