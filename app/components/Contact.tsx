@@ -1,3 +1,5 @@
+"use client";
+
 import { 
   ArrowUpRight, 
   Mail, 
@@ -6,13 +8,25 @@ import {
 } from "lucide-react";
 import { FaInstagram, FaLinkedin, FaWhatsapp } from "react-icons/fa";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const fadeUpVariants: any = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
 
 export function Contact() {
   return (
     <section id="contact" className="container mx-auto px-6 lg:px-8 mb-20 scroll-mt-28">
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+      >
         {/* Left Column - Call to action */}
-        <div className="flex flex-col gap-4">
+        <motion.div variants={fadeUpVariants} className="flex flex-col gap-4">
           <span className="text-sm font-bold uppercase tracking-wider text-[var(--accent-light)]">
             Dê o Próximo Passo
           </span>
@@ -32,10 +46,10 @@ export function Contact() {
               <ArrowUpRight className="h-4 w-4 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" />
             </Link>
           </div>
-        </div>
+        </motion.div>
 
         {/* Middle Column - Value Prop */}
-        <div className="rounded-2xl border border-[var(--card-border)] bg-[var(--card-bg)] p-6 relative flex flex-col justify-between">
+        <motion.div variants={fadeUpVariants} className="rounded-2xl border border-[var(--card-border)] bg-[var(--card-bg)] p-6 relative flex flex-col justify-between">
           <Quote className="absolute top-6 left-6 h-8 w-8 text-[var(--accent)]/30" />
           <div className="pt-8">
             <p className="text-gray-300 text-sm leading-relaxed italic">
@@ -51,10 +65,10 @@ export function Contact() {
               <p className="text-xs text-gray-400">Diretor Comercial</p>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Right Column - Contact Info & Socials */}
-        <div className="flex flex-col gap-6">
+        <motion.div variants={fadeUpVariants} className="flex flex-col gap-6">
           <span className="text-sm font-bold uppercase tracking-wider text-gray-500">
             Meus Contatos
           </span>
@@ -73,8 +87,8 @@ export function Contact() {
               <span className="text-sm">matheus18serafim@gmail.com</span>
             </a>
           </div>
-        </div>
-      </div>
+        </motion.div>
+      </motion.div>
     </section>
   );
 }

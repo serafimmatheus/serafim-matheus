@@ -1,6 +1,14 @@
+"use client";
+
 import { ArrowRight, TrendingUp } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { motion } from "framer-motion";
+
+const fadeUpVariants: any = {
+  hidden: { opacity: 0, y: 30 },
+  visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+};
 
 export function Projects() {
   const projects = [
@@ -71,22 +79,32 @@ export function Projects() {
 
   return (
     <section id="models" className="container mx-auto px-6 lg:px-8 scroll-mt-28">
-      <div className="flex flex-col items-center text-center mb-16">
-        <span className="text-sm font-bold uppercase tracking-widest text-[var(--accent-light)] mb-4">
+      <motion.div 
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
+        className="flex flex-col items-center text-center mb-16"
+      >
+        <motion.span variants={fadeUpVariants} className="text-sm font-bold uppercase tracking-widest text-[var(--accent-light)] mb-4">
           Comprovado na Prática
-        </span>
-        <h2 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
+        </motion.span>
+        <motion.h2 variants={fadeUpVariants} className="text-4xl md:text-5xl font-extrabold text-white tracking-tight">
           Modelos que já estão gerando <span className="text-transparent bg-clip-text bg-gradient-to-r from-[var(--accent-light)] to-blue-400">Resultados</span>
-        </h2>
-        <div className="h-1.5 w-24 bg-gradient-to-r from-[var(--accent)] to-[var(--accent-light)] rounded-full mt-8" />
-        <p className="mt-6 text-gray-400 max-w-2xl text-lg">
+        </motion.h2>
+        <motion.div variants={fadeUpVariants} className="h-1.5 w-24 bg-gradient-to-r from-[var(--accent)] to-[var(--accent-light)] rounded-full mt-8" />
+        <motion.p variants={fadeUpVariants} className="mt-6 text-gray-400 max-w-2xl text-lg">
           Não adivinho o que funciona. Eu uso estruturas validadas no Google Ads para o seu segmento.
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
 
       <div className="flex flex-col gap-10 md:gap-0">
         {projects.map((project, index) => (
-          <div
+          <motion.div
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.1 }}
+            variants={fadeUpVariants}
             key={project.id}
             className={`w-full md:w-[48%] group rounded-3xl border border-[var(--card-border)] bg-[#0d1117]/80 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_60px_-15px_rgba(109,40,217,0.3)] hover:border-[var(--accent)]/60 flex flex-col relative ${
               index % 2 === 0 ? 'md:self-start' : 'md:self-end'
@@ -132,7 +150,7 @@ export function Projects() {
                 <ArrowRight className="h-4 w-4 transition-transform group-hover/link:translate-x-1" />
               </Link>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>
