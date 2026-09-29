@@ -3,9 +3,12 @@
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 import { useState, useEffect } from "react";
+import { usePathname } from "next/navigation";
 
 export function Navbar() {
   const [activeSection, setActiveSection] = useState("");
+  const pathname = usePathname();
+  const isHome = pathname === "/";
 
   const navLinks = [
     { name: "Sobre Mim", href: "#about" },
@@ -44,7 +47,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-[var(--card-border)] bg-[var(--background)]/80 backdrop-blur-md">
       <div className="container mx-auto flex h-20 items-center justify-between px-6 lg:px-8">
         {/* Logo */}
-        <Link href="#home" className="flex items-center gap-2 group">
+        <Link href={isHome ? "#home" : "/"} className="flex items-center gap-2 group">
           <span className="text-xl font-bold tracking-tight text-white">
             Matheus <span className="font-medium text-[var(--accent-light)]">Serafim</span>
           </span>
@@ -57,7 +60,7 @@ export function Navbar() {
             return (
               <Link
                 key={link.name}
-                href={link.href}
+                href={isHome ? link.href : `/${link.href}`}
                 onClick={() => setActiveSection(link.href.substring(1))}
                 className={`text-sm font-medium transition-colors relative group py-2 ${
                   isActive ? "text-white" : "text-gray-400 hover:text-white"
@@ -77,7 +80,7 @@ export function Navbar() {
         {/* CTA */}
         <div className="flex items-center">
           <Link
-            href="#contact"
+            href={isHome ? "#contact" : "/#contact"}
             className="group flex items-center justify-center gap-2 rounded-lg bg-[var(--accent)] px-5 py-2.5 text-sm font-semibold text-white transition-all hover:bg-[var(--accent-light)] hover:shadow-[0_0_20px_rgba(109,40,217,0.4)]"
           >
             Vamos Conversar
