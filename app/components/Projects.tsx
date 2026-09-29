@@ -84,11 +84,13 @@ export function Projects() {
         </p>
       </div>
 
-      <div className="columns-1 md:columns-2 gap-10 space-y-10">
-        {projects.map((project) => (
+      <div className="flex flex-col gap-10 md:gap-0">
+        {projects.map((project, index) => (
           <div
             key={project.id}
-            className="break-inside-avoid group rounded-3xl border border-[var(--card-border)] bg-[#0d1117]/80 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_60px_-15px_rgba(109,40,217,0.3)] hover:border-[var(--accent)]/60 flex flex-col relative"
+            className={`w-full md:w-[48%] group rounded-3xl border border-[var(--card-border)] bg-[#0d1117]/80 backdrop-blur-xl overflow-hidden transition-all duration-500 hover:-translate-y-3 hover:shadow-[0_30px_60px_-15px_rgba(109,40,217,0.3)] hover:border-[var(--accent)]/60 flex flex-col relative ${
+              index % 2 === 0 ? 'md:self-start' : 'md:self-end'
+            } ${index > 0 ? 'md:-mt-40' : ''}`}
           >
             {/* Project Image */}
             <div
