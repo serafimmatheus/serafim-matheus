@@ -9,13 +9,13 @@ import { Contact } from "./components/Contact";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-24">
+    <main className="flex flex-col w-full overflow-x-hidden">
       <Hero />
       <Features />
       <About />
       <Process />
       <Projects />
       <Contact />
-    </div>
+    </main>
   );
 }

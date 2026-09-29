@@ -78,7 +78,7 @@ export function Projects() {
   ];
 
   return (
-    <section id="models" className="container mx-auto px-6 lg:px-8 scroll-mt-28">
+    <section id="models" className="container mx-auto px-6 lg:px-8 py-12 md:py-32 scroll-mt-28">
       <motion.div 
         initial="hidden"
         whileInView="visible"

@@ -24,10 +24,10 @@ const floatingVariants: any = {
 
 export function Features() {
   return (
-    <section className="container mx-auto px-6 lg:px-8 py-20 relative">
+    <section className="container mx-auto px-6 lg:px-8 py-12 md:py-20 relative">
       
       {/* --- Feature 1: Design focado em conversão --- */}
-      <div className="flex flex-col lg:flex-row items-center gap-16 mb-32">
+      <div className="flex flex-col lg:flex-row items-center gap-12 md:gap-16 mb-20 md:mb-32">
         {/* Left: Visual Composition */}
         <motion.div 
           initial="hidden"

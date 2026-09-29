@@ -17,7 +17,7 @@ const fadeUpVariants: any = {
 
 export function Contact() {
   return (
-    <section id="contact" className="container mx-auto px-6 lg:px-8 mb-20 scroll-mt-28">
+    <section id="contact" className="container mx-auto px-6 lg:px-8 py-12 md:py-20 scroll-mt-28">
       <motion.div 
         initial="hidden"
         whileInView="visible"
