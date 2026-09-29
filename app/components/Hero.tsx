@@ -4,6 +4,7 @@ import Link from "next/link";
 import { ArrowUpRight, CheckCircle2 } from "lucide-react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { ParticleCanvas } from "./ui/ParticleCanvas";
 
 const fadeUpVariants: any = {
   hidden: { opacity: 0, y: 30 },
@@ -19,7 +20,10 @@ export function Hero() {
   return (
     <section id="home" className="container mx-auto px-6 lg:px-8 pt-16 pb-12 md:pb-28 relative">
       {/* Background Ambience */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[600px] bg-[var(--accent)]/10 rounded-full blur-[120px] pointer-events-none -z-10" />
+      <div className="absolute inset-0 w-[100vw] left-1/2 -translate-x-1/2 h-full -z-20 overflow-hidden pointer-events-none [mask-image:linear-gradient(to_bottom,white,transparent)]">
+        <ParticleCanvas />
+      </div>
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[600px] bg-[var(--accent)]/15 rounded-full blur-[120px] pointer-events-none -z-10" />
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
         {/* Left Content */}
