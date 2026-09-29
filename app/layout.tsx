@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Outfit } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "./components/Navbar";
 import { Footer } from "./components/Footer";
+import Script from "next/script";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -32,6 +33,22 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       suppressHydrationWarning
     >
       <body className="min-h-full flex flex-col font-[var(--font-outfit)]" suppressHydrationWarning>
+        <Script
+          strategy="afterInteractive"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-852600532"
+        />
+        <Script
+          id="gtag-init"
+          strategy="afterInteractive"
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'AW-852600532');
+            `,
+          }}
+        />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />
