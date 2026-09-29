@@ -59,13 +59,14 @@ export function Hero() {
               </span>
               <div className="absolute inset-0 bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-[150%] skew-x-12 group-hover:animate-shimmer" />
             </Link>
-            <Link
-              href="https://wa.me/5541987495188?text=Ol%C3%A1%2C%20Matheus%2C%20eu%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
+            <a
+              href="https://api.whatsapp.com/send?phone=5541987495188&text=Ol%C3%A1%2C%20Matheus%2C%20eu%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
               target="_blank"
+              rel="noopener noreferrer"
               className="w-full sm:w-auto group flex items-center justify-center gap-2 rounded-xl border border-[var(--card-border)] bg-white/5 px-8 py-4 font-bold text-white transition-all hover:bg-white/10 hover:border-white/20 backdrop-blur-sm"
             >
               Falar no WhatsApp
-            </Link>
+            </a>
           </motion.div>
 
           <motion.div variants={fadeUpVariants} className="mt-10 pt-10 border-t border-white/10">
