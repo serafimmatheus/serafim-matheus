@@ -20,8 +20,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Matheus Serafim | Full Stack & AI Engineer",
-  description: "Portfólio de Matheus Serafim, Engenheiro de Software especializado em Node.js, React, IA, RAG e Agentes Autônomos.",
+  title: "Matheus Serafim | Landing Pages de Alta Conversão",
+  description: "Especialista em criar landing pages otimizadas para Google Ads e tráfego pago. Transforme cliques em clientes reais com páginas desenhadas para multiplicar suas vendas.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
