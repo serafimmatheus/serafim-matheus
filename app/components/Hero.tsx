@@ -17,7 +17,7 @@ const popInVariants: any = {
 
 export function Hero() {
   return (
-    <section id="home" className="container mx-auto px-6 lg:px-8 pt-16 pb-28 relative overflow-hidden">
+    <section id="home" className="container mx-auto px-6 lg:px-8 pt-16 pb-28 relative">
       {/* Background Ambience */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-4xl h-[600px] bg-[var(--accent)]/10 rounded-full blur-[120px] pointer-events-none -z-10" />
       

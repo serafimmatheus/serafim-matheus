@@ -23,7 +23,7 @@ export function Contact() {
         whileInView="visible"
         viewport={{ once: true, amount: 0.2 }}
         variants={{ visible: { transition: { staggerChildren: 0.1 } } }}
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+        className="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-24"
       >
         {/* Left Column - Call to action */}
         <motion.div variants={fadeUpVariants} className="flex flex-col gap-4">
@@ -48,24 +48,7 @@ export function Contact() {
           </div>
         </motion.div>
 
-        {/* Middle Column - Value Prop */}
-        <motion.div variants={fadeUpVariants} className="rounded-2xl border border-[var(--card-border)] bg-[var(--card-bg)] p-6 relative flex flex-col justify-between">
-          <Quote className="absolute top-6 left-6 h-8 w-8 text-[var(--accent)]/30" />
-          <div className="pt-8">
-            <p className="text-gray-300 text-sm leading-relaxed italic">
-              "Minha taxa de conversão estava estagnada. O Matheus refez a página focando inteiramente no cliente final, e os resultados dobraram na primeira semana de campanha."
-            </p>
-          </div>
-          <div className="flex items-center gap-4 mt-6">
-            <div className="w-10 h-10 rounded-full bg-emerald-900/50 overflow-hidden flex-shrink-0 flex items-center justify-center">
-              <span className="text-emerald-400 font-bold text-xs">CS</span>
-            </div>
-            <div>
-               <h4 className="text-white font-bold text-sm">Cliente Satisfeito</h4>
-              <p className="text-xs text-gray-400">Diretor Comercial</p>
-            </div>
-          </div>
-        </motion.div>
+
 
         {/* Right Column - Contact Info & Socials */}
         <motion.div variants={fadeUpVariants} className="flex flex-col gap-6">

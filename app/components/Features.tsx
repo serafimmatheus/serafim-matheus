@@ -24,7 +24,7 @@ const floatingVariants: any = {
 
 export function Features() {
   return (
-    <section className="container mx-auto px-6 lg:px-8 py-20 overflow-hidden">
+    <section className="container mx-auto px-6 lg:px-8 py-20 relative">
       
       {/* --- Feature 1: Design focado em conversão --- */}
       <div className="flex flex-col lg:flex-row items-center gap-16 mb-32">
@@ -40,17 +40,18 @@ export function Features() {
           <div className="absolute inset-0 bg-gradient-to-tr from-[var(--accent)]/20 to-blue-500/20 rounded-full blur-[100px] -z-10" />
           
           {/* Main Mockup */}
-          <div className="relative w-full max-w-[350px] aspect-[9/16] bg-[#0d1117] rounded-3xl border-4 border-gray-800 overflow-hidden shadow-2xl rotate-[-5deg] z-10 transition-transform hover:rotate-0 duration-500">
-            <div className="absolute top-0 inset-x-0 h-6 bg-gray-800 flex justify-center items-center">
-              <div className="w-12 h-1.5 bg-gray-900 rounded-full" />
+          <div className="relative w-full max-w-[350px] aspect-[9/16] bg-[#0d1117] rounded-[2rem] border-[6px] sm:border-8 border-[#1a1f2e] overflow-hidden shadow-2xl rotate-[-5deg] z-10 transition-transform hover:rotate-0 duration-500 flex flex-col">
+            <div className="h-7 w-full bg-[#1a1f2e] flex justify-center items-center shrink-0">
+              <div className="w-16 h-1.5 bg-black/50 rounded-full" />
             </div>
-            <div className="w-full h-full relative mt-6">
+            <div className="w-full flex-1 relative bg-gray-900">
               <Image 
                 src="/projects/vb-auto-center.vercel.app.png" 
                 alt="Mockup Celular" 
                 fill 
                 className="object-cover object-top"
               />
+              <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0d1117] to-transparent pointer-events-none" />
             </div>
           </div>
 
@@ -138,18 +139,19 @@ export function Features() {
         >
           {/* Main Mockup Desktop */}
           <div className="relative w-full max-w-[500px] aspect-[16/10] bg-[#0d1117] rounded-xl border border-gray-700 overflow-hidden shadow-2xl flex flex-col">
-            <div className="h-8 bg-gray-900 border-b border-gray-700 flex items-center px-4 gap-2">
+            <div className="h-8 bg-gray-900 border-b border-gray-700 flex items-center px-4 gap-2 shrink-0">
               <div className="w-3 h-3 rounded-full bg-red-500/80" />
               <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
               <div className="w-3 h-3 rounded-full bg-green-500/80" />
             </div>
-            <div className="w-full flex-1 relative">
+            <div className="w-full flex-1 relative bg-gray-900">
               <Image 
                 src="/projects/seven-marcenaria.vercel.app.png" 
                 alt="Mockup Desktop" 
                 fill 
                 className="object-cover object-top"
               />
+              <div className="absolute inset-x-0 bottom-0 h-16 bg-gradient-to-t from-[#0d1117] to-transparent pointer-events-none" />
             </div>
           </div>
           
