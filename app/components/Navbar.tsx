@@ -1,13 +1,11 @@
 import Link from "next/link";
-import { ArrowUpRight, Code2 } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 export function Navbar() {
   const navLinks = [
-    { name: "Início", href: "#" },
-    { name: "Sobre", href: "#about" },
-    { name: "Habilidades", href: "#skills" },
-    { name: "Projetos", href: "#projects" },
-    { name: "Blog", href: "#" },
+    { name: "Início", href: "#home" },
+    { name: "Sobre Mim", href: "#about" },
+    { name: "Projetos", href: "#models" },
     { name: "Contato", href: "#contact" },
   ];
 
@@ -16,9 +14,8 @@ export function Navbar() {
       <div className="container mx-auto flex h-20 items-center justify-between px-6 lg:px-8">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 group">
-          <Code2 className="h-8 w-8 text-[var(--accent-light)] transition-transform group-hover:scale-110" />
           <span className="text-xl font-bold tracking-tight text-white">
-            Code<span className="font-medium text-gray-300">Craft</span>
+            Matheus <span className="font-medium text-[var(--accent-light)]">Serafim</span>
           </span>
         </Link>
 
