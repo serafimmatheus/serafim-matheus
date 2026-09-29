@@ -143,12 +143,29 @@ export function AuroraCanvas() {
       gl.drawArrays(gl.TRIANGLE_STRIP, 0, 4);
       rafRef.current = requestAnimationFrame(loop);
     };
-    rafRef.current = requestAnimationFrame(loop);
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          if (!rafRef.current) {
+            rafRef.current = requestAnimationFrame(loop);
+          }
+        } else {
+          if (rafRef.current) {
+            cancelAnimationFrame(rafRef.current);
+            rafRef.current = null;
+          }
+        }
+      });
+    }, { threshold: 0 });
+
+    observer.observe(canvas);
 
     return () => {
       ro.disconnect();
       window.removeEventListener("resize", onResize);
       if (rafRef.current) cancelAnimationFrame(rafRef.current);
+      observer.unobserve(canvas);
       if (bufRef.current) gl.deleteBuffer(bufRef.current);
       if (programRef.current) gl.deleteProgram(programRef.current);
     };
@@ -157,6 +174,7 @@ export function AuroraCanvas() {
   return (
     <canvas
       ref={canvasRef}
+      aria-hidden="true"
       className="absolute inset-0 w-full h-full pointer-events-none opacity-40 mix-blend-screen"
     />
   );
