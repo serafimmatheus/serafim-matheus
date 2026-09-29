@@ -44,7 +44,7 @@ export function Navbar() {
     <header className="sticky top-0 z-50 w-full border-b border-[var(--card-border)] bg-[var(--background)]/80 backdrop-blur-md">
       <div className="container mx-auto flex h-20 items-center justify-between px-6 lg:px-8">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 group">
+        <Link href="#home" className="flex items-center gap-2 group">
           <span className="text-xl font-bold tracking-tight text-white">
             Matheus <span className="font-medium text-[var(--accent-light)]">Serafim</span>
           </span>

@@ -38,7 +38,7 @@ export function Contact() {
           </p>
           <div className="mt-4 w-full">
             <Link
-              href="https://wa.me/5541987495188"
+              href="https://wa.me/5541987495188?text=Ol%C3%A1%2C%20Matheus%2C%20eu%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento"
               target="_blank"
               className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-lg bg-[var(--accent)] px-6 py-3 text-sm font-semibold text-white transition-all hover:bg-[var(--accent-light)] hover:shadow-[0_0_20px_rgba(109,40,217,0.4)] group"
             >
@@ -56,7 +56,7 @@ export function Contact() {
             Meus Contatos
           </span>
           <div className="flex gap-4">
-            <Link href="https://wa.me/5541987495188" target="_blank" className="w-10 h-10 rounded-full bg-[var(--card-bg)] border border-[var(--card-border)] flex items-center justify-center text-gray-400 hover:text-[#25D366] hover:border-[#25D366] transition-all">
+            <Link href="https://wa.me/5541987495188?text=Ol%C3%A1%2C%20Matheus%2C%20eu%20vim%20do%20site%20e%20gostaria%20de%20um%20or%C3%A7amento" target="_blank" className="w-10 h-10 rounded-full bg-[var(--card-bg)] border border-[var(--card-border)] flex items-center justify-center text-gray-400 hover:text-[#25D366] hover:border-[#25D366] transition-all">
               <FaWhatsapp className="h-5 w-5" />
             </Link>
             <Link href="https://www.linkedin.com/in/matheus-serafim-753893a7" target="_blank" className="w-10 h-10 rounded-full bg-[var(--card-bg)] border border-[var(--card-border)] flex items-center justify-center text-gray-400 hover:text-[#0A66C2] hover:border-[#0A66C2] transition-all">
