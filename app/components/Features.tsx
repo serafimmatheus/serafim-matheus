@@ -34,13 +34,13 @@ export function Features() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeUpVariants}
-          className="w-full lg:w-1/2 relative h-[400px] sm:h-[500px] flex justify-center items-center"
+          className="w-full lg:w-1/2 relative flex justify-center items-center py-8"
         >
           {/* Background Glow */}
           <div className="absolute inset-0 bg-gradient-to-tr from-[var(--accent)]/20 to-blue-500/20 rounded-full blur-[100px] -z-10" />
           
           {/* Main Mockup */}
-          <div className="relative w-full max-w-[350px] aspect-[9/16] bg-[#0d1117] rounded-[2rem] border-[6px] sm:border-8 border-[#1a1f2e] overflow-hidden shadow-2xl rotate-[-5deg] z-10 transition-transform hover:rotate-0 duration-500 flex flex-col">
+          <div className="relative w-full max-w-[260px] sm:max-w-[350px] aspect-[9/16] bg-[#0d1117] rounded-[2rem] border-[6px] sm:border-8 border-[#1a1f2e] overflow-hidden shadow-2xl rotate-[-5deg] z-10 transition-transform hover:rotate-0 duration-500 flex flex-col">
             <div className="h-7 w-full bg-[#1a1f2e] flex justify-center items-center shrink-0">
               <div className="w-16 h-1.5 bg-black/50 rounded-full" />
             </div>
@@ -135,10 +135,10 @@ export function Features() {
           whileInView="visible"
           viewport={{ once: true, amount: 0.2 }}
           variants={fadeUpVariants}
-          className="w-full lg:w-1/2 relative h-[350px] sm:h-[450px] flex justify-center items-center z-10"
+          className="w-full lg:w-1/2 relative flex justify-center items-center py-8 z-10"
         >
           {/* Main Mockup Desktop */}
-          <div className="relative w-full max-w-[500px] aspect-[16/10] bg-[#0d1117] rounded-xl border border-gray-700 overflow-hidden shadow-2xl flex flex-col">
+          <div className="relative w-full max-w-[90%] sm:max-w-[500px] aspect-[16/10] bg-[#0d1117] rounded-xl border border-gray-700 overflow-hidden shadow-2xl flex flex-col">
             <div className="h-8 bg-gray-900 border-b border-gray-700 flex items-center px-4 gap-2 shrink-0">
               <div className="w-3 h-3 rounded-full bg-red-500/80" />
               <div className="w-3 h-3 rounded-full bg-yellow-500/80" />
