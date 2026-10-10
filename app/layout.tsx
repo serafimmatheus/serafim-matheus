@@ -35,7 +35,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       <body className="min-h-full flex flex-col font-[var(--font-outfit)]" suppressHydrationWarning>
         <Script
           strategy="afterInteractive"
-          src="https://www.googletagmanager.com/gtag/js?id=AW-852600532"
+          src="https://www.googletagmanager.com/gtag/js?id=AW-18062592588"
         />
         <Script
           id="gtag-init"
@@ -45,7 +45,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
               window.dataLayer = window.dataLayer || [];
               function gtag(){dataLayer.push(arguments);}
               gtag('js', new Date());
-              gtag('config', 'AW-852600532');
+              gtag('config', 'AW-18062592588');
             `,
           }}
         />
